@@ -28,6 +28,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using Cinemachine.Utility;
+using UnityEngine.PlayerLoop;
 
 namespace Climbing
 {
@@ -43,6 +44,7 @@ namespace Climbing
             Slide
         }
 
+
         CameraType curCam = CameraType.None;
 
         [SerializeField] private CinemachineFreeLook FreeLook;
@@ -53,7 +55,7 @@ namespace Climbing
         {
             animator = GetComponent<Animator>();
 
-            FreeLookCam();
+            FreeLookCam(); 
         }
 
         //Switches To FreeLook Cam

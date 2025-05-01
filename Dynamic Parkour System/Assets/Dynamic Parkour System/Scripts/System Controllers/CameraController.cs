@@ -45,8 +45,10 @@ namespace Climbing
         void Start()
         {
             cameraOffset = GetComponent<CinemachineCameraOffset>();
-        }
 
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
 
         void Update()
         {

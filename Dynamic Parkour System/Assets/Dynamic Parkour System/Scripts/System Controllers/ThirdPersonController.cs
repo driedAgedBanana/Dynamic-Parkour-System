@@ -79,7 +79,7 @@ namespace Climbing
             if (cameraController == null)
                 Debug.LogError("Attach the Camera Controller located in the Free Look Camera");
         }
-
+        
         private void Start()
         {
             characterMovement.OnLanded += characterAnimation.Land;
